@@ -1,6 +1,21 @@
-# Defining this function
-import art
-print(art.logo)
+# Title image
+logo = '''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
+print(logo)
+
+#Defining the function
+
 def auction():
     bidder_dict = {}
     max_bid = 0
