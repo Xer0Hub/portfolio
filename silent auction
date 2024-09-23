@@ -1,0 +1,26 @@
+# Defining this function
+import art
+print(art.logo)
+def auction():
+    bidder_dict = {}
+    max_bid = 0
+    max_bidder = ""
+
+    while True:
+        print("Welcome to silent auction please place your bid")
+        user_name = str(input("What is your name?\n"))
+        user_bid = int(input("What is your maximum bid?\n"))
+        bidder_dict[user_name] = user_bid
+
+        y_or_n = input("Are there more bidders? Yes or no? \n").strip().lower()
+        if y_or_n == "no":
+            for key, value in bidder_dict.items():
+                if value > max_bid:
+                    max_bid = value
+                    max_bidder = key
+            print(f"The winner is {max_bidder} with a bid of {max_bid}")
+            break
+        else:
+            print("\n" * 100)
+
+auction()
